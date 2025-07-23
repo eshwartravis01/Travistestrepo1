@@ -11,8 +11,9 @@ addons:
     packages:
       - libxml2-dev
 
-create:
-name: my_custom_name #custom identifier string, human readable
+vm:
+  use:
+    name: my_custom_image_new
 before_install:
   - echo "Installing dependencies..."
 
