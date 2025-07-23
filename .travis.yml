@@ -12,8 +12,8 @@ addons:
       - libxml2-dev
 
 vm:
-  create:
-    name: my_custom_image_new
+  use:
+    name: naruto_image
 before_install:
   - echo "Installing dependencies..."
 
