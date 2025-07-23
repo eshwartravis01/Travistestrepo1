@@ -12,7 +12,7 @@ addons:
       - libxml2-dev
 
 vm:
-  use:
+  create:
     name: my_custom_image_new
 before_install:
   - echo "Installing dependencies..."
