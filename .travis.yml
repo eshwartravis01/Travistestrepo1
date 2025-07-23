@@ -19,3 +19,4 @@ before_install:
 
 script:
   - echo "Running tests..."
+  - python Testfile1.py
