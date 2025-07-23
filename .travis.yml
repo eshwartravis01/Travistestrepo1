@@ -1,11 +1,20 @@
 os: linux
 dist: focal
-vm: #existing key
+
+language: python
+python:
+  - "3.8"
+
+addons:
+  apt:
+    update: true
+    packages:
+      - libxml2-dev
+
 create:
 name: my_custom_name #custom identifier string, human readable
 before_install:
+  - echo "Installing dependencies..."
 
-sudo apt-get -y install libxml2-dev
-addons:
-apt:
-update: true
+script:
+  - echo "Running tests..."
