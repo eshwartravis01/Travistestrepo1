@@ -1,19 +1,17 @@
 os: linux
 dist: focal
 
-language: python
-python:
-  - "3.8"
+vm:
+  use:
+    name: Itachi_image
+    size: large
+
+before_install:
+  - sudo apt-get -y install libxml2-dev
 
 addons:
   apt:
     update: true
-    packages:
-      - libxml2-dev
-      
-before_install:
-  - echo "Installing dependencies..."
 
 script:
-  - echo "Running tests..."
-  - python Testfile1.py
+  - echo "TEST"
