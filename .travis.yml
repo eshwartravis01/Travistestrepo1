@@ -4,7 +4,7 @@ dist: focal
 vm:
   use:
     name: Itachi_image
-  size: large
+  size: medium
 
 before_install:
   - sudo apt-get -y install libxml2-dev
